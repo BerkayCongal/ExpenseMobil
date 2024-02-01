@@ -36,7 +36,8 @@ export default function Home() {
 
     return(
        <>   
-       <Loading/>
+       {/* yüklenme ekranın görmek istemiyorsan kaldırabilirsin */}
+       <Loading/>  
             {
             user ? (
                 <div>
@@ -76,3 +77,5 @@ export default function Home() {
        </>
     )
 }
+
+          

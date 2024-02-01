@@ -7,7 +7,7 @@ export default function Loading() {
         <>
             <div className="header-container load-screen">
             <div className="firstcontainer"  >
-               <h1>montra</h1>
+               <h1>Montra</h1>
             </div>
           </div>
         </>

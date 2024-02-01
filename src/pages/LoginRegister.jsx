@@ -4,9 +4,8 @@ import { supabase } from "../main";
 
 
 export default function LoginRegister() {
-    
-    const [password, setPassword] = useState("");
     const [showPassword, setShotPassword] = useState(false)
+    const [password, setPassword] = useState("");
     const isRegister = location.pathname === "/register"
     const navigate = useNavigate()
 
@@ -79,7 +78,7 @@ const handleToggleShowPassword = () => {
                    </div>
                 </div>
                 <button className="inputbtn">{isRegister ? 'Kayıt Ol' : 'Giriş Yap'}</button>
-                <Link className="forgot" to={"/forgotpassword"}>Forgot Password?</Link>
+                {/* <Link className="forgot" to={"/forgotpassword"}>Forgot Password?</Link> */}
                 <Link className="SignupLogin" to={"/register"}>Don’t have an account yet?<p>Sign Up</p></Link>             
             </form>
          </div>
